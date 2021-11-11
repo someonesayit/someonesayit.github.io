@@ -1,0 +1,11 @@
+baseURL = 'http://someonesay.it/'
+languageCode = 'zh-cn'
+title = '某人说'
+theme = "yinyang"
+
+[author]
+  name = "某人"
+  homepage = "https://someonesay.it/"
+
+[params]
+headTitle = "SomeOneSayIt"
