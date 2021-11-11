@@ -1,4 +1,4 @@
-baseURL = 'http://someonesay.it/'
+baseURL = 'https://someonesayit.github.io/'
 languageCode = 'zh-cn'
 title = '某人说'
 theme = "yinyang"
