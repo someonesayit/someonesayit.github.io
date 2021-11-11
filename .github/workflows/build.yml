@@ -1,20 +1,27 @@
-name: build
-
+name: Hugo Build and Deploy
 on:
   push:
     branches:
-    - main
-
+      - master
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: 'Building...'
-      uses: reuixiy/hugo-deploy@v1
-      env:
-        DEPLOY_REPO: someonesayit/someonesayit.github.io
-        DEPLOY_BRANCH: build
-        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
-        # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-        TZ: Asia/Shanghai
+      - uses: actions/checkout@v1  # v2 does not have submodules option now
+        with:
+          submodules: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest # 应用最新的hugo
+          extended: true # 我的主题需要应用hugo-extende
+      - name: Build
+        run: hugo --gc --minify
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.DEPLOY_KEY }} #这里在repo settings里填入SSH私钥
+          external_repository: someonesayit/someonesayit.github.io # <- 改成自己的 user github page
+          publish_dir: ./public # <- 指定成品放置文件夹
+          publish_branch: main # <- 远端repo目标分支
+
