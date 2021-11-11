@@ -2,6 +2,9 @@ baseURL = 'https://someonesayit.github.io/'
 languageCode = 'zh-cn'
 title = '某人说'
 theme = "yinyang"
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
 
 [author]
   name = "某人"
