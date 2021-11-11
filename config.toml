@@ -2,9 +2,17 @@ baseURL = 'https://someonesayit.github.io/'
 languageCode = 'zh-cn'
 title = '某人说'
 theme = "yinyang"
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
+DefaultContentLanguage = "cn"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    guessSyntax = true
+    noClasses = true
+    style = "bw"
+    tabWidth = 2
 
 [author]
   name = "某人"
@@ -12,3 +20,4 @@ publishdir = "public"
 
 [params]
 headTitle = "SomeOneSayIt"
+mainSections = ["posts"]
