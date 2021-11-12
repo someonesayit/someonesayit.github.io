@@ -21,3 +21,5 @@ DefaultContentLanguage = "cn"
 [params]
 headTitle = "SomeOneSayIt"
 mainSections = ["posts"]
+
+
