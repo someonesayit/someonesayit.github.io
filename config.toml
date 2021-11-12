@@ -3,6 +3,7 @@ languageCode = 'zh-cn'
 title = '某人说'
 theme = "yinyang"
 DefaultContentLanguage = "cn"
+googleAnalytics = 'G-NVDR5V5Y7P'
 
 [markup]
   [markup.goldmark]
