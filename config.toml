@@ -22,4 +22,6 @@ DefaultContentLanguage = "cn"
 headTitle = "SomeOneSayIt"
 mainSections = ["posts"]
 
-
+[[params.socials]]
+name = "About Me"
+link = "https://www.someonesay.it/pages/about"
