@@ -1,4 +1,4 @@
-baseURL = 'https://someonesayit.github.io/'
+baseURL = 'https://someonesay.it'
 languageCode = 'zh-cn'
 title = '某人说'
 theme = "yinyang"
@@ -16,7 +16,7 @@ DefaultContentLanguage = "cn"
 
 [author]
   name = "某人"
-  homepage = "https://someonesay.it/"
+  homepage = "https://someonesay.it"
 
 [params]
 headTitle = "SomeOneSayIt"
