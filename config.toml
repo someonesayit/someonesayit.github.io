@@ -3,7 +3,6 @@ languageCode = 'zh-cn'
 title = '某人说'
 theme = "yinyang"
 DefaultContentLanguage = "cn"
-googleAnalytics = 'G-NVDR5V5Y7P'
 
 [markup]
   [markup.goldmark]
@@ -22,8 +21,8 @@ googleAnalytics = 'G-NVDR5V5Y7P'
 [params]
 headTitle = "SomeOneSayIt"
 mainSections = ["posts"]
-postHeaderContent = '<script async src="https://www.googletagmanager.com/gtag/js?id=G-NVDR5V5Y7P"></script>'
-postHeaderContent = '<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-NVDR5V5Y7P");</script>'
+postHeaderContent = "<script async src='https://www.googletagmanager.com/gtag/js?id=G-NVDR5V5Y7P'></script>"
+postHeaderContent = "<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-NVDR5V5Y7P');</script>"
 
 [[params.socials]]
 name = "About Me"
