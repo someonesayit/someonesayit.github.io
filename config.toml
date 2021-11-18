@@ -24,6 +24,9 @@ mainSections = ["posts"]
 extraHead = "<script async src='https://www.googletagmanager.com/gtag/js?id=G-NVDR5V5Y7P'></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'G-NVDR5V5Y7P');</script><script data-ad-client='ca-pub-8178264023092182' async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>"
 
 [[params.socials]]
+name = "Log"
+link = "https://www.someonesay.it/pages/log"
+[[params.socials]]
 name = "About Me"
 link = "https://www.someonesay.it/pages/about"
 
